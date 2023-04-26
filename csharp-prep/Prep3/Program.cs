@@ -17,8 +17,8 @@ class Program
         do
         {
             Console.Write("\nWhat is your guess? ");
-            string number_guess = Console.ReadLine();
-            guess = int.Parse(number_guess);
+            string numberGuess = Console.ReadLine();
+            guess = int.Parse(numberGuess);
 
             if (guess < number)
             {
