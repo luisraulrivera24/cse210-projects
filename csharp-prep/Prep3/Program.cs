@@ -36,7 +36,7 @@ class Program
                 guesses += 1;
                 Console.WriteLine($"You had a total of {guesses} guess(es).\n");
             }
-            
+
         } while (number != guess);
     }
 }
