@@ -9,6 +9,8 @@ class Program
     {
 
         Random randomNumber = new Random();
+        // This won't count the number 100. Instead of 100,
+        // I should have done 101.
         int number = randomNumber.Next(1,100);
 
         int guesses = 0;
