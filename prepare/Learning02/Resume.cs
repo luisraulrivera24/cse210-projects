@@ -1,17 +1,21 @@
 using System;
+
 public class Resume
 {
     public string _name;
-    public List<Job> _jobsList = new List<Job>();
 
-    public void JobNames()
+    public List<Job> _jobList = new List<Job>();
+
+    public void DisplayResume()
     {
-        Console.WriteLine($"Name: {_name}");
+        Console.WriteLine($"\nName: {_name}");
         Console.WriteLine("Jobs:");
 
-        foreach (Job j in _jobsList)
+        foreach(Job j in _jobList)
         {
-            Console.WriteLine(j.JobInfo());
+            j.DisplayJobDetails();
         }
+        
+        Console.WriteLine();
     }
 }
